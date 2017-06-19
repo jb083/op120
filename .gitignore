@@ -218,3 +218,7 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+
+# musixtex
+*.mx1
+*.mx2
