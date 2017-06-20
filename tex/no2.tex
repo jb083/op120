@@ -1,9 +1,41 @@
 
 \chapter{クラリネットソナタ第2番}
 
-\section{全体の構造}
+% \section{全体の構造}
 
-\section{第1楽章}
+\section{第1楽章: Allegro amabile}
+
+典型的なソナタ形式の楽章だが, 第1番に比べ形式的明瞭さが増している. 変ホ長調, 4分の4拍子.
+
+\musicbegin
+	\def\nbinstruments{2}%   % パート数 2
+	\setstaffs{1}{2}%        % 下から1番目は2段
+	\setclef{1}{6000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	\generalmeter{\meterfrac{2}{4}}%  % 拍子は8分の6拍子
+	\setname{2}{Cl\hspace{8truemm}}%
+	\setname{1}{Pf\hspace{8truemm}}%
+	\startextract%
+		%(1)
+		\notes\ibu{0}{G}{+2}\zhl{E}\qb{0}{E}\zqb{0}{I}\pt{H}\ql{I}\cu{**}\zh{I}\hu{E}|%
+			\cu{**}\qb{0}{N}\tbl{0}\qb{0}{e}\ibl{1}{e}{-3}\qb{1}{gbe}\tbl{1}\qb{1}{N}&%
+			\isluru{2}{l}\qlp{l**}\cl{k}\ibl{2}{j}{-1}\qb{2}{mlg}\tbl{2}\tslur{2}{j}\qb{2}{j}\enotes
+		\bar
+		%(2)
+		\notes|%
+			&%
+			\ibsluru{2}{h}\hu{h***}\tbsluru{2}{d}\qu{d*}\ds\cu{c}\enotes
+		\bar
+		%(3)
+		\notes|%
+			&%
+			\qup{e**}\cu{b}\ql{i*}\ds\cu{d}\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{2-1-1}{第2番第1楽章冒頭. クラリネットはB管だがここでは実音表記. }
+
+
+序をおかずクラリネットによる第1主題の提示から始まる (譜例\ref{2-1-1}).
+
 
 \section{第2楽章}
 
