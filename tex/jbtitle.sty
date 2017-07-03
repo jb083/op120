@@ -1,0 +1,30 @@
+\ProvidesPackage{tex/jbtitle}[2017/07/03 v.01]
+\RequirePackage{graphicx}
+\newcommand*{\project}[1]{\gdef\@project{#1}%
+}
+\newcommand*{\@project}{Final Year Project}
+\newcommand*{\supervisor}[1]{\gdef\@supervisor{#1}%
+}
+\newcommand*{\@supervisor}{\texttt{\string\supervisor} currently
+not set. Please fix this.}
+\newcommand*{\subtitle}[1]{\gdef\@subtitle{#1}}
+\newcommand*{\opus}[1]{\gdef\@opus{#1}}
+
+\renewcommand*{\maketitle}{%
+\begin{titlepage}
+	\centering
+	\vspace*{50truemm}
+	{\LARGE \@title\par}
+	\vspace*{15truemm}
+	{\Large Johannes Brahms:\par}
+	\vspace*{7.5truemm}
+	{\Large \@subtitle\par}
+	\vspace*{7.5truemm}
+	{\Large op.\@opus \par}
+	\vspace*{25truemm}
+	{\large\@author\par}
+	\vspace*{7.5truemm}
+	{\large\@date\par}
+\end{titlepage}
+}
+\endinput
