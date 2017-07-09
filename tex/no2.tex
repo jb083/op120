@@ -5,14 +5,31 @@
 
 \section{第1楽章: Allegro amabile}
 
-典型的なソナタ形式の楽章だが, 第1番に比べ形式的明瞭さが増している. 変ホ長調, 4分の4拍子.
+\begin{table}[htbp]
+	\centering
+	\begin{tabular}{ccc|ccc|ccc|c}
+		\multicolumn{3}{c|}{提示部E} & \multicolumn{3}{c|}{展開部D} &
+			\multicolumn{3}{c|}{再現部R} & コーダC \\ \hline
+		\multicolumn{3}{c|}{1--55} & \multicolumn{3}{c|}{56--102} &
+			\multicolumn{3}{c|}{103--149} & 150--173 \\
+		\ind{E}{1} & \ind{E}{2} & \ind{E}{c} & \ind{D}{1} & \ind{D}{2} & \ind{D}{3} &
+			\ind{R}{1} & \ind{R}{2} & \ind{R}{c} & \\ \hline
+		1- & 22- & 40- & 56- & 73- & 88- & 103- & 120- & 138- & \\
+		Es & B & B & Es--g & G & B & Es & Es & Es & E--Es
+	\end{tabular}
+	\caption{第1楽章の構成}
+	\label{structure of mov1}
+\end{table}
+
+
+典型的なソナタ形式の楽章だが, Brahmsのどのソナタ楽章と比較しても形式的明瞭さが顕著である. 変ホ長調, 4分の4拍子.
 
 \musicbegin
 	\def\nbinstruments{2}%   % パート数 2
 	\setstaffs{1}{2}%        % 下から1番目は2段
 	\setclef{1}{6000}%       % 下から1番目はへ音記号
 	\generalsignature{-3}%    % 調号は正の値のときシャープの数
-	\generalmeter{\meterfrac{2}{4}}%  % 拍子は8分の6拍子
+	\generalmeter{\meterC}%  % 拍子
 	\setname{2}{Cl\hspace{8truemm}}%
 	\setname{1}{Pf\hspace{8truemm}}%
 	\startextract%
@@ -36,6 +53,43 @@
 
 序をおかずクラリネットによる第1主題の提示から始まる (譜例\ref{2-1-1}).
 
+\musicbegin
+	\shosetu{22}
+	\def\nbinstruments{1}%   % パート数 1
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterC}%  % 拍子
+	\startextract%
+		\notes\islurd{0}{M}\qu{M*}\tslur{0}{f}\qu{f*}\ds\ibu{0}{f}{+1}\islurd{0}{f}\qb{0}{ff}\tbu{0}\tslur{0}{g}\qb{0}{g}\enotes
+		\bar
+		\notes\islurd{0}{g}\qu{g*}\tslur{0}{c}\qu{c*}\ds\ibu{0}{f}{0}\islurd{0}{c}\qb{0}{cf}\tbu{0}\tslur{0}{c}\qb{0}{c}\enotes
+		\bar
+		\notes\islurd{0}{d}\qup{d**}\tslur{0}{b}\cu{b}\islurd{0}{b}\qup{b**}\na{a}\tslur{0}{a}\cu{a}\enotes
+		\bar
+		\Notes\na{a}\islurd{0}{a}\qu{a}\qu{b}\tslur{0}{c}\qu{c}\qp\enotes
+	\endextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{2-1-22}{第2番第1楽章第22小節から.}
+
+\musicbegin
+	\shosetu{40}
+	\def\nbinstruments{1}%   % パート数 1
+	\setstaffs{1}{1}%        % 下から1番目は2段
+	\setclef{1}{0000}%       % 下から1番目はへ音記号
+	\generalsignature{-3}%    % 調号は正の値のときシャープの数
+	% \generalmeter{\meterC}%  % 拍子
+	\startextract%
+		\Notes\qp\isluru{0}{p}\ql{p}\na{o}\ql{o}\tslur{0}{l}\ql{l}\enotes
+		\bar
+		\notes\ibl{0}{m}{0}\na{o}\isluru{0}{o}\qb{0}{onk}\tbl{0}\tslur{0}{n}\qb{0}{n}\isluru{0}{m}\ql{m*}\tslur{0}{j}\ql{j*}\enotes
+		\bar
+		\notes\ds\ibl{0}{k}{-2}\isluru{0}{k}\qb{0}{kl}\tbl{0}\tslur{0}{i}\qb{0}{i}\enotes
+		\nnotes\ibbl{0}{j}{-1}\isluru{0}{k}\qb{0}{kj}\fl{g}\qb{0}{g}\tbl{0}\tslur{0}{j}\qb{0}{j}%
+			\ibbl{0}{h}{+2}\isluru{0}{f}\qb{0}{fik}\tbl{0}\tslur{0}{m}\qb{0}{m}\enotes
+		\bar
+		\Notes\ql{p}\enotes
+	\zendextract % 頭にzをつけると最後に小節線を表示しない
+\musicend{2-1-40}{第2番第1楽章第40小節から.}
 
 \section{第2楽章}
 
